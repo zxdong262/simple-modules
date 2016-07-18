@@ -1,7 +1,7 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const ch = require('../src/classes-extend')
+const ch = require('../src/classes-extend').default
 
 var VDom = class {
 	constructor(cls) {

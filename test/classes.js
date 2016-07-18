@@ -1,7 +1,7 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const ch = require('../src/classes')
+const ch = require('../src/classes').default
 
 describe('class hanlder', function() {
 
