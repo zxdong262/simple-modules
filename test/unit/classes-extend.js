@@ -1,7 +1,7 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const ch = require('../src/classes-extend').default
+const ch = require('../../src/classes-extend').default
 
 var VDom = class {
 	constructor(cls) {
@@ -16,8 +16,6 @@ describe('class-extend hanlder', function() {
 
 	it('addClass', function() {
 		var vdom = new VDom('xl')
-		console.log(vdom)
-
 		vdom.addClass('a', 'b', 'c d')
 		expect(vdom.className).to.equal('xl a b c d')
 	})

@@ -17,28 +17,16 @@ ugly = require('gulp-uglify')
 ,mocha = require('gulp-mocha')
 ,batch = require('gulp-batch')
 ,src = 'test/*.js'
+,Server = require('karma').Server
 
-//build
-gulp.task('test', function () {
-	return gulp.src(src)
-		.pipe(plumber())
-		.pipe(mocha())
-		
-		.once('error', function (e) {
-				console.error(e.stack || e)
-		})
-		.once('end', function () {
-			//process.exit()
-		})
+/**
+ * Watch for file changes and re-run tests on each change
+ */
+gulp.task('tdd', function (done) {
+  new Server({
+    configFile: __dirname + '/test/karma.conf.js'
+  }, done).start()
 })
 
-gulp.task('watch',  function () {
-
-	return watch(['test/*.js', 'src/*.js'], batch(function (events, done) {
-		gulp.start('test', done)
-	}))
-
-})
-
-gulp.task('default', ['watch'])
+gulp.task('default', ['tdd'])
 

@@ -4,7 +4,9 @@
   "description": "some simple modules that do dom handling etc",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "dev": "npm-run-all -p dev:server dev:gulp",
+    "dev:server": "node test/ajax-test-server.js",
+    "dev:gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -20,21 +22,31 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "browserify": "^13.0.1",
     "chai": "^3.5.0",
-    "gulp": "3.8.11",
+    "gulp": "^3.8.11",
     "gulp-batch": "^1.0.5",
-    "gulp-concat": "2.5.2",
+    "gulp-concat": "^2.5.2",
     "gulp-mocha": "^2.2.0",
-    "gulp-newer": "0.5.0",
-    "gulp-plumber": "1.0.1",
-    "gulp-rename": "1.2.2",
-    "gulp-uglify": "1.2.0",
-    "gulp-util": "3.0.5",
-    "gulp-watch": "4.2.4",
-    "koa": "1.2.0",
-    "koa-static": "2.0.0",
-    "mocha": "2.4.5",
-    "run-sequence": "1.1.5"
+    "gulp-newer": "^0.5.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "gulp-watch": "^4.2.4",
+    "karma": "^1.1.1",
+    "karma-browserify": "^5.1.0",
+    "karma-chai-plugins": "^0.7.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-mocha": "^1.1.1",
+    "koa": "^1.2.0",
+    "koa-bodyparser": "^2.2.0",
+    "koa-static": "^2.0.0",
+    "mocha": "^2.4.5",
+    "npm-run-all": "^2.3.0",
+    "phantomjs-prebuilt": "^2.1.7",
+    "run-sequence": "^1.1.5",
+    "watchify": "^3.7.0"
   },
   "engines": {
     "node": "^5.8.0"

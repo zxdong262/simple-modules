@@ -7,3 +7,12 @@ some simple dom/event/ajax modules.
 - event(on, off...) --todo
 - ...more maybe
 
+## test
+```bash
+git clone https://github.com/zxdong262/simple-modules.git
+cd simple-modules
+npm install
+npm run dev
+```
+
+
