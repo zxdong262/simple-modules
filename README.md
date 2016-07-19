@@ -1,5 +1,5 @@
 # simple modules
-[![Build Status](https://travis-ci.org/zxdong262/vue-pagenav.svg?branch=master)](https://travis-ci.org/zxdong262/vue-pagenav)
+[![Build Status](https://travis-ci.org/zxdong262/simple-modules.svg?branch=master)](https://travis-ci.org/zxdong262/simple-modules)
 
 some simple dom/event/ajax modules.
 
