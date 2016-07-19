@@ -92,4 +92,7 @@ Node.prototype.on = Node.prototype.addEventListener
 
 //other sugars
 Node.prototype.html = Node.prototype.innerHTML
-Node.prototype.text = Node.prototype.textContent
+Node.prototype.text = function(str) {
+  if(str) this.textContent(str)
+  else return this.textContent()
+}

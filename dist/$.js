@@ -1,6 +1,6 @@
 /**
  * simple-modules
- * @version v0.1.0 - 2016-07-19
+ * @version v0.1.2 - 2016-07-19
  * @link https://github.com/zxdong262/simple-modules
  * @author ZHAO Xudong (zxdong@gmail.com)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -109,6 +109,9 @@ Node.prototype.on = Node.prototype.addEventListener
 
 //other sugars
 Node.prototype.html = Node.prototype.innerHTML
-Node.prototype.text = Node.prototype.textContent
+Node.prototype.text = function(str) {
+  if(str) this.textContent(str)
+  else return this.textContent()
+}
 return $;
 }));

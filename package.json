@@ -1,6 +1,6 @@
 {
   "name": "simple-modules",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "some simple modules that do dom handling etc",
   "main": "dist/$.js",
   "scripts": {
