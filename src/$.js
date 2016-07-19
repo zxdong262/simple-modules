@@ -89,3 +89,7 @@ NodeList.prototype.removeClass = Node.prototype.removeClass = function() {
 
 //on off
 Node.prototype.on = Node.prototype.addEventListener
+
+//other sugars
+Node.prototype.html = Node.prototype.innerHTML
+Node.prototype.text = Node.prototype.textContent

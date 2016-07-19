@@ -1,8 +1,8 @@
 {
   "name": "simple-modules",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "some simple modules that do dom handling etc",
-  "main": "index.js",
+  "main": "dist/$.js",
   "scripts": {
     "dev": "npm-run-all -p dev:server dev:tdd",
     "dev:server": "node test/ajax-test-server.js",
