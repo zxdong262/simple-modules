@@ -8,8 +8,8 @@
     "dev:server": "node test/ajax-test-server.js",
     "dev:tdd": "gulp",
     "dist": "gulp dist",
-    "test": "npm-run-all -p dev:server test:gulp",
-    "test:gulp": "gulp test"
+    "test": "npm run dev:server &npm run test:karma",
+    "test:karma": "NODE_ENV=test ./node_modules/.bin/karma start test/karma.conf.js --no-auto-watch --single-run"
   },
   "repository": {
     "type": "git",
