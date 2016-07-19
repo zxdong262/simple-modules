@@ -1,6 +1,6 @@
 {
   "name": "simple-modules",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "some simple modules that do dom handling etc",
   "main": "dist/$.js",
   "scripts": {
@@ -46,6 +46,7 @@
     "karma-mocha": "^1.1.1",
     "koa": "^1.2.0",
     "koa-bodyparser": "^2.2.0",
+    "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
     "mocha": "^2.4.5",
     "npm-run-all": "^2.3.0",
