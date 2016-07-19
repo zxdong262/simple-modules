@@ -1,10 +1,8 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const ajaxs = require('../../src/ajax.js').default
 
-
-const { ajax, get, post } = ajaxs
+const { ajax, get, post } = $
 const karmaPort = require('../config').karmaPort
 
 //console.log(ajax)
