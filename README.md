@@ -1,7 +1,9 @@
 # simple modules
 [![Build Status](https://travis-ci.org/zxdong262/simple-modules.svg?branch=master)](https://travis-ci.org/zxdong262/simple-modules)
 
-simple dom/event/ajax/selector syntactic sugar(ie9+).
+simple dom/event/ajax/selector syntactic sugar and basic ui framework(ie9+ or maybe no ie).
+
+the target is creating very small(`$.js` only 1.2k compressed and not gzipped) and basic modules to be used in webpack/global. for simple pages, load the script/css into html to reduce http requests.
 
 - selector( `$(selector)` )
 - event
